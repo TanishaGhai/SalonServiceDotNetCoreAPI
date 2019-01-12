@@ -1,0 +1,14 @@
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/bin/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.deps.json
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/bin/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.runtimeconfig.json
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/bin/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.runtimeconfig.dev.json
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/bin/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.dll
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/bin/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.pdb
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/obj/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.csprojAssemblyReference.cache
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/obj/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.csproj.CoreCompileInputs.cache
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/obj/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.RazorAssemblyInfo.cache
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/obj/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.RazorAssemblyInfo.cs
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/obj/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.AssemblyInfoInputs.cache
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/obj/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.AssemblyInfo.cs
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/obj/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.RazorTargetAssemblyInfo.cache
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/obj/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.dll
+/Users/tanishaghai/Desktop/Angular/SalonServiceDotNetAPI/SalonServiceDotNetCoreAPI/obj/Debug/netcoreapp2.1/SalonServiceDotNetCoreAPI.pdb

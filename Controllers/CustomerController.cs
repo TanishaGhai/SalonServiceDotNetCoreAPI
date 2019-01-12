@@ -3,18 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SalonServiceDotNetCoreAPI.Model;
+using SalonServiceDotNetCoreAPI.DBContext;
 
 namespace SalonServiceDotNetCoreAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class CustomerController : ControllerBase
     {
+        ICustomerRepository _customerRepository;
+
+        CustomerController(ICustomerRepository customerRepository)
+        {
+            _customerRepository=customerRepository;
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        [ProducesResponseType(200, Type = typeof(List<Customer>))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [Route("Customers")]
+        public ActionResult<IEnumerable<string>> GetAllCustomers()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(_customerRepository.GetAllCustomers());
         }
 
         // GET api/values/5

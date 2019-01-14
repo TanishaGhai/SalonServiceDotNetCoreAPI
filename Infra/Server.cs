@@ -24,10 +24,11 @@ using MongoDB.Bson;
         public MongoDbServer(IConfigutaionRepository config)
         {
             _config=config;
+             _client= new MongoClient(_config.GetConnectionStringValue("ConnectionString"));  
+            _database=_client.GetDatabase(_config.GetDatabaseName("DataBase"));
         }
          public  void CreateConnection(string conn) {  
-            _client= new MongoClient(_config.GetConfigurationValue("ConnectionString"));  
-            _database=_client.GetDatabase(_config.GetConfigurationValue("DataBase"));
+           
         }   
 
 

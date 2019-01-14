@@ -14,17 +14,14 @@ namespace SalonServiceDotNetCoreAPI.Controllers
     {
         ICustomerRepository _customerRepository;
 
-        CustomerController(ICustomerRepository customerRepository)
+        public CustomerController(ICustomerRepository customerRepository)
         {
             _customerRepository=customerRepository;
         }
 
         // GET api/values
         [HttpGet]
-        [ProducesResponseType(200, Type = typeof(List<Customer>))]
-        [ProducesResponseType(400)]
-        [ProducesResponseType(404)]
-        [Route("Customers")]
+       // [ProducesResponseType(404)]
         public ActionResult<IEnumerable<string>> GetAllCustomers()
         {
             return Ok(_customerRepository.GetAllCustomers());

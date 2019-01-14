@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using SalonServiceDotNetCoreAPI.DBContext;
+using SalonServiceDotNetCoreAPI.Infra;
 
 namespace SalonServiceDotNetCoreAPI
 {
@@ -27,7 +29,13 @@ namespace SalonServiceDotNetCoreAPI
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSingleton<IConfiguration>(Configuration);
-           
+
+            services.AddScoped<ICustomerRepository,CustomerRepository>();
+            services.AddScoped<IConfigutaionRepository,ConfigurationRepository>();
+            services.AddScoped(typeof(IMongoRepository<,>),typeof(MongoRepository<,>));
+            services.AddScoped(typeof(IMongoRepository<>),typeof(MongoRepository<>));
+            services.AddScoped<IServer,MongoDbServer>();
+              
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,7 +50,7 @@ namespace SalonServiceDotNetCoreAPI
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

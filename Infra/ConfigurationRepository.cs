@@ -5,20 +5,26 @@ namespace SalonServiceDotNetCoreAPI.Infra
 {
     public interface IConfigutaionRepository
     {
-        string GetConfigurationValue(string key);
+        string GetConnectionStringValue(string key);
+        string GetDatabaseName(string key);
     }
 
     public class ConfigurationRepository : IConfigutaionRepository
     {
          private IConfiguration _configuration;
+
         public ConfigurationRepository(IConfiguration config)
         {   
             _configuration=config;
         }
-        public string GetConfigurationValue(string key)
+        public string GetConnectionStringValue(string key)
         {
-           return GetConfigurationValue(key) ?? _configuration.GetSection(key).Value;
+           return _configuration.GetSection("MongoDbConn").GetSection("ConnectionString").Value;
+        }
 
+         public string GetDatabaseName(string key)
+        {
+           return _configuration.GetSection("MongoDbConn").GetSection("DataBase").Value;
         }
     }
 }

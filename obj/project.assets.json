@@ -12966,6 +12966,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.Extensions.Configuration.Json >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
+      "MongoDB.Bson >= 2.7.2",
       "MongoDB.Driver >= 2.7.2",
       "MongoDB.Driver.Core >= 2.7.2"
     ]
@@ -13031,6 +13032,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "MongoDB.Bson": {
+            "target": "Package",
+            "version": "[2.7.2, )"
           },
           "MongoDB.Driver": {
             "target": "Package",

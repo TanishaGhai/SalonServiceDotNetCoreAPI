@@ -13,4 +13,6 @@ namespace SalonServiceDotNetCoreAPI.Infra
     public interface IEntity : IEntity<string>
     {
     }
+
+    
 }
